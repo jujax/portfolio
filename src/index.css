@@ -25,3 +25,14 @@ h1 {
         font-size: 2.5rem; /* équivalent à text-xl */
     }
 }
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./assets/JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, h1, h2, p, a, ul, li {
+    font-family: 'JetBrains Mono', monospace !important;
+}
