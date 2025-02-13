@@ -2687,6 +2687,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"devicons-react@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "devicons-react@npm:1.4.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10c0/2a192c87bf7f6705cd83e330c5afcb755544d554f4a62612729c6f1935c5efaf8b43fad428369c1a3ca5bdff4f6aeb2e21db85624ef83da1d2b4f98d7b167886
+  languageName: node
+  linkType: hard
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -3889,6 +3898,7 @@ __metadata:
     "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
     "@vitejs/plugin-react": "npm:^4.3.4"
+    devicons-react: "npm:^1.4.0"
     eslint: "npm:^9.19.0"
     eslint-plugin-react-hooks: "npm:^5.0.0"
     eslint-plugin-react-refresh: "npm:^0.4.18"
