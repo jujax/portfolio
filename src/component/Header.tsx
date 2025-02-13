@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, ExternalLink } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
 
 const menu = [
@@ -10,6 +10,11 @@ const menu = [
   {
     name: "Contact",
     url: "/contact",
+  },
+  {
+    name: "CV",
+    url: "https://github.com/jujax/cv/blob/main/README.md",
+    external: true,
   },
 ];
 
@@ -22,12 +27,24 @@ export default function Header() {
         <ul className="h-full flex items-center justify-center gap-6">
           {menu.map((item) => (
             <li key={item.name}>
-              <Link
-                to={item.url}
-                className="text-neutral-600 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors text-sm font-medium"
-              >
-                {item.name}
-              </Link>
+              {item.external ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-600 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors text-sm font-medium flex items-center"
+                >
+                  {item.name}
+                  <ExternalLink size={16} className="ml-1" />
+                </a>
+              ) : (
+                <Link
+                  to={item.url}
+                  className="text-neutral-600 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors text-sm font-medium flex items-center"
+                >
+                  {item.name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
