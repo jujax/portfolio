@@ -7,23 +7,19 @@ h3,
 h4,
 h5,
 h6 {
-    text-align: left;
+    @apply text-left;
 }
 
 p {
-    text-align: justify;
+    @apply text-justify;
 }
 
 h1 {
-    font-size: 4rem; /* équivalent à text-4xl */
-    font-weight: 700; /* équivalent à font-bold */
-    margin-bottom: 1.5rem; /* équivalent à mb-6 */
-    text-align: center;
-  }
-
+    @apply text-4xl font-bold mb-6 text-center;
+}
 
 @media (max-width: 465px) {
     h1 {
-        font-size: 2.5rem; /* équivalent à text-xl */
+        @apply text-xl;
     }
 }

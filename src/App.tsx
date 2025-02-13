@@ -10,7 +10,6 @@ function App() {
       <Theme>
         <BrowserRouter>
           <Header />
-          {/* <Suspense fallback={<div>Chargement...</div>}> */}
           <main className="pt-24 mx-auto max-w-[700px] px-4">
             <Routes>
               {routes.map((route) => (
@@ -22,7 +21,6 @@ function App() {
               ))}
             </Routes>
           </main>
-          {/* </Suspense> */}
         </BrowserRouter>
       </Theme>
     </ThemeProvider>
