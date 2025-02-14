@@ -25,6 +25,45 @@ h2,
 p,
 a,
 ul,
-li {
+li,
+div.terminal-line,
+span {
     font-family: fixedsys;
+}
+
+/* terminal */
+
+.terminal {
+    font-family: 'ta-police-pixelisée';
+    background-color: #000;
+    color: #00ff00;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.terminal-line {
+    margin-bottom: 10px;
+}
+
+.command-prefix {
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    color: #00ff00;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }

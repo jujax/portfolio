@@ -1,7 +1,7 @@
 import { Theme } from "@radix-ui/themes";
 import { BrowserRouter, Route, Routes } from "react-router";
-import Header from "./component/Header";
-import { ThemeProvider } from "./context/ThemeContext";
+import Header from "./components/Header";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import routes from "./Routes";
 
 function App() {
