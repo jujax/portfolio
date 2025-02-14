@@ -48,7 +48,7 @@ export default function Home() {
       <div className="container mx-auto px-4 space-y-24">
         <section>
           <h2 className="text-3xl font-bold mb-12 text-center">Langages</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center items-center">
+          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <JavascriptPlain color="#f0db4f" size="100%" />
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-12 text-center">
             Frameworks & Libraries
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center items-center">
+          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
                 <NodejsOriginalWordmark size="100%" />
@@ -98,7 +98,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-3xl font-bold mb-12 text-center">DevOps</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center items-center">
+          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
                 <AnsibleOriginalWordmark size="100%" />
@@ -153,7 +153,7 @@ export default function Home() {
 
         <section>
           <h2 className="text-3xl font-bold mb-12 text-center">Cloud</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center items-center max-w-2xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
                 <AmazonwebservicesOriginalWordmark size="100%" />
@@ -171,7 +171,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-12 text-center">
             Databases
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center items-center">
+          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
                 <PostgresqlOriginalWordmark size="100%" />

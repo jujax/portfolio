@@ -1,17 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-h3,
-h4,
-h5,
-h6 {
-    text-align: left;
-}
-
-p {
-    text-align: justify;
-}
-
 h1 {
     font-size: 4rem;
     /* équivalent à text-4xl */
@@ -19,23 +8,15 @@ h1 {
     /* équivalent à font-bold */
     margin-bottom: 1.5rem;
     /* équivalent à mb-6 */
-    text-align: center;
+    text-align: left;
 }
 
 
 @media (max-width: 465px) {
     h1 {
         font-size: 2.5rem;
-        /* équivalent à text-xl */
     }
 }
-
-/* @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('./assets/JetBrainsMono-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-} */
 
 html,
 body,
