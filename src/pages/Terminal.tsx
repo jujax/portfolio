@@ -1,4 +1,4 @@
-import TerminalText from "../component/TerminalText";
+import TerminalText from "../components/TerminalText";
 
 export default function Terminal() {
     const lines = [
