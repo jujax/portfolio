@@ -1,39 +1,37 @@
-import {
-  AmazonwebservicesOriginalWordmark,
-  AmazonwebservicesPlainWordmark,
-  AnsibleOriginalWordmark,
-  AnsiblePlainWordmark,
-  CplusplusPlain,
-  DockerOriginalWordmark,
-  DockerPlainWordmark,
-  ExpressOriginalWordmark,
-  GithubOriginalWordmark,
-  GitlabOriginalWordmark,
-  GitlabPlainWordmark,
-  GooglecloudOriginalWordmark,
-  JavascriptPlain,
-  KubernetesOriginalWordmark,
-  KubernetesPlainWordmark,
-  LinuxOriginal,
-  LinuxPlain,
-  MongodbOriginalWordmark,
-  MongodbPlainWordmark,
-  NestjsOriginalWordmark,
-  NodejsOriginalWordmark,
-  NodejsPlainWordmark,
-  PostgresqlOriginalWordmark,
-  PostgresqlPlainWordmark,
-  PythonOriginalWordmark,
-  PythonPlainWordmark,
-  ReactOriginalWordmark,
-  RedisOriginalWordmark,
-  RedisPlainWordmark,
-  SqliteOriginalWordmark,
-  SqlitePlainWordmark,
-  TerraformOriginalWordmark,
-  TerraformPlainWordmark,
-  TypescriptPlain
-} from "devicons-react";
+import JavascriptPlain from "devicons-react/lib/icons/JavascriptPlain";
+import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
+import PythonOriginalWordmark from "devicons-react/lib/icons/PythonOriginalWordmark";
+import PythonPlainWordmark from "devicons-react/lib/icons/PythonPlainWordmark";
+import CplusplusPlain from "devicons-react/lib/icons/CplusplusPlain";
+import NodejsOriginalWordmark from "devicons-react/lib/icons/NodejsOriginalWordmark";
+import NodejsPlainWordmark from "devicons-react/lib/icons/NodejsPlainWordmark";
+import ExpressOriginalWordmark from "devicons-react/lib/icons/ExpressOriginalWordmark";
+import ReactOriginalWordmark from "devicons-react/lib/icons/ReactOriginalWordmark";
+import NestjsOriginalWordmark from "devicons-react/lib/icons/NestjsOriginalWordmark";
+import AnsibleOriginalWordmark from "devicons-react/lib/icons/AnsibleOriginalWordmark";
+import AnsiblePlainWordmark from "devicons-react/lib/icons/AnsiblePlainWordmark";
+import TerraformOriginalWordmark from "devicons-react/lib/icons/TerraformOriginalWordmark";
+import TerraformPlainWordmark from "devicons-react/lib/icons/TerraformPlainWordmark";
+import DockerOriginalWordmark from "devicons-react/lib/icons/DockerOriginalWordmark";
+import DockerPlainWordmark from "devicons-react/lib/icons/DockerPlainWordmark";
+import KubernetesOriginalWordmark from "devicons-react/lib/icons/KubernetesOriginalWordmark";
+import KubernetesPlainWordmark from "devicons-react/lib/icons/KubernetesPlainWordmark";
+import GitlabOriginalWordmark from "devicons-react/lib/icons/GitlabOriginalWordmark";
+import GitlabPlainWordmark from "devicons-react/lib/icons/GitlabPlainWordmark";
+import GithubOriginalWordmark from "devicons-react/lib/icons/GithubOriginalWordmark";
+import LinuxOriginal from "devicons-react/lib/icons/LinuxOriginal";
+import LinuxPlain from "devicons-react/lib/icons/LinuxPlain";
+import AmazonwebservicesOriginalWordmark from "devicons-react/lib/icons/AmazonwebservicesOriginalWordmark";
+import AmazonwebservicesPlainWordmark from "devicons-react/lib/icons/AmazonwebservicesPlainWordmark";
+import GooglecloudOriginalWordmark from "devicons-react/lib/icons/GooglecloudOriginalWordmark";
+import PostgresqlOriginalWordmark from "devicons-react/lib/icons/PostgresqlOriginalWordmark";
+import PostgresqlPlainWordmark from "devicons-react/lib/icons/PostgresqlPlainWordmark";
+import RedisOriginalWordmark from "devicons-react/lib/icons/RedisOriginalWordmark";
+import RedisPlainWordmark from "devicons-react/lib/icons/RedisPlainWordmark";
+import SqliteOriginalWordmark from "devicons-react/lib/icons/SqliteOriginalWordmark";
+import SqlitePlainWordmark from "devicons-react/lib/icons/SqlitePlainWordmark";
+import MongodbOriginalWordmark from "devicons-react/lib/icons/MongodbOriginalWordmark";
+import MongodbPlainWordmark from "devicons-react/lib/icons/MongodbPlainWordmark";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function Home() {
