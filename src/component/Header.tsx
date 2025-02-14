@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Sun, Moon, ExternalLink } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 
 const menu = [
   {
