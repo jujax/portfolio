@@ -32,7 +32,7 @@ import SqliteOriginalWordmark from "devicons-react/lib/icons/SqliteOriginalWordm
 import SqlitePlainWordmark from "devicons-react/lib/icons/SqlitePlainWordmark";
 import MongodbOriginalWordmark from "devicons-react/lib/icons/MongodbOriginalWordmark";
 import MongodbPlainWordmark from "devicons-react/lib/icons/MongodbPlainWordmark";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../contexts/ThemeContext";
 
 export default function Home() {
   const { theme } = useTheme();
