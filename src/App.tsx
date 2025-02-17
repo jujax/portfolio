@@ -10,7 +10,7 @@ function App() {
       <Theme>
         <BrowserRouter>
           <Header />
-          <main className="pt-24 mx-auto max-w-[1000px] px-4">
+          <main className="pt-24 mx-auto px-4">
             <Routes>
               {routes.map((route) => (
                 <Route

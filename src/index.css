@@ -18,6 +18,13 @@ h1 {
     }
 }
 
+@font-face {
+    font-family: "Input";
+    src: url("./assets/Input-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body,
 h1,
@@ -26,5 +33,5 @@ p,
 a,
 ul,
 li {
-    font-family: fixedsys;
+    font-family: "Input";
 }

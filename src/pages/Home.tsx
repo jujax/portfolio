@@ -38,7 +38,7 @@ export default function Home() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-[50vh] p-4">
+      <div className="flex flex-col items-baseline justify-center min-h-screen p-4">
         <h1>Hello World, I'm Julien</h1>
         <p className="text-xl">I´m a Fullstack developper</p>
       </div>
