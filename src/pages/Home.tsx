@@ -109,7 +109,11 @@ export default function Home() {
               )}
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
+            {theme === "light" ? (
               <LinuxPlain color="black" size="100%" />
+            ) : (
+              <LinuxPlain color="white" size="100%" />
+            )}
             </div>
           </div>
         </section>
