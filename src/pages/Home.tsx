@@ -40,7 +40,7 @@ export default function Home() {
     <>
       <div className="flex flex-col items-baseline justify-center min-h-screen p-4">
         <h1>Hello World, I'm Julien</h1>
-        <p className="text-xl">I´m a Fullstack developper</p>
+        <p className="text-xl">I´m a Fullstack developer</p>
       </div>
 
       <div className="container mx-auto px-4 space-y-24">
