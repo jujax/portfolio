@@ -32,17 +32,27 @@ import {
   SqlitePlainWordmark,
   TerraformOriginalWordmark,
   TerraformPlainWordmark,
-  TypescriptPlain
+  TypescriptPlain,
 } from "devicons-react";
 import { useTheme } from "../contexts/ThemeContext";
+import TerminalText from "../components/TerminalText";
 
 export default function Home() {
   const { theme } = useTheme();
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-[50vh] p-4">
-        <h1>Hello World, I'm Julien</h1>
-        <p className="text-xl">I´m a Fullstack developper</p>
+      <div className="flex flex-col justify-center min-h-[50vh] p-4">
+        <h1>
+          <TerminalText
+            lines={["Hello World, I'm Julien",
+              "I´m a Fullstack developper"
+            ]}
+            speed={50}
+            commandDelay={500}
+            commandPrefix="$"
+          />
+        </h1>
+        <p className="text-xl"></p>
       </div>
 
       <div className="container mx-auto px-4 space-y-24">
@@ -168,9 +178,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Databases
-          </h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Databases</h2>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (

@@ -19,8 +19,8 @@ const TerminalText: FC<TerminalTextProps> = ({
   const [isTyping, setIsTyping] = useState<boolean[]>([]);
 
   useEffect(() => {
-    if(isTyping.length !== lines.length) {
-        setIsTyping([true, ...Array(lines.length - 1).fill(false)]);
+    if (isTyping.length !== lines.length) {
+      setIsTyping([true, ...Array(lines.length - 1).fill(false)]);
     }
     if (currentLineIndex < lines.length) {
       if (currentCharIndex < lines[currentLineIndex].length) {
@@ -58,25 +58,18 @@ const TerminalText: FC<TerminalTextProps> = ({
 
         return () => clearTimeout(timer);
       }
-    } 
-    // else {
-    //     setIsTyping((prev) => {
-    //         const newIsTyping = [...prev];
-    //         newIsTyping[currentLineIndex - 1] = false;
-    //         return newIsTyping;
-    //     });
-    // }
+    }
   }, [currentLineIndex, currentCharIndex, lines, speed, commandDelay]);
 
   return (
-    <div className="terminal">
+    <>
       {displayedLines.map((line, index) => (
-        <div key={index} className="terminal-line">
+        <div>
           <span className="command-prefix">{commandPrefix}</span> {line}{" "}
           {isTyping[index] && <span className="cursor">▋</span>}
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

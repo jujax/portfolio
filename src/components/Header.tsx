@@ -1,6 +1,6 @@
+import { ExternalLink } from "lucide-react";
 import { Link } from "react-router";
-import { Sun, Moon, ExternalLink } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
+// import { useTheme } from "../contexts/ThemeContext";
 
 const menu = [
   {
@@ -19,11 +19,11 @@ const menu = [
 ];
 
 export default function Header() {
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 w-full max-w-[400px] border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm">
-      <nav className="px-6 h-16 flex items-center justify-between">
+    <header className="fixed w-full border border-neutral-200 dark:border-neutral-800 bg-[#00ff00] color-black backdrop-blur-sm">
+      <nav className="px-6 h-8 flex items-center justify-between">
         <ul className="h-full flex items-center justify-center gap-6">
           {menu.map((item) => (
             <li key={item.name}>
@@ -48,7 +48,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <button
+        {/* <button
           onClick={toggleTheme}
           className="p-2 rounded-lg neutral-600 dark:neutral-200 hover:bg-gray-400 dark:hover:bg-gray-800 transition-colors"
           aria-label="Toggle theme"
@@ -61,7 +61,7 @@ export default function Header() {
           ) : (
             <Sun size={20} className="text-neutral-600 dark:text-neutral-400" />
           )}
-        </button>
+        </button> */}
       </nav>
     </header>
   );

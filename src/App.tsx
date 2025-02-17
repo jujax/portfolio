@@ -10,17 +10,17 @@ function App() {
       <Theme>
         <BrowserRouter>
           <Header />
-          <main className="pt-24 mx-auto max-w-[1000px] px-4">
+            <main className="pt-24 px-4 bg-black text-white">
             <Routes>
               {routes.map((route) => (
-                <Route
-                  key={route.path || ""}
-                  path={route.path}
-                  element={route.element}
-                />
+              <Route
+                key={route.path || ""}
+                path={route.path}
+                element={route.element}
+              />
               ))}
             </Routes>
-          </main>
+            </main>
         </BrowserRouter>
       </Theme>
     </ThemeProvider>
