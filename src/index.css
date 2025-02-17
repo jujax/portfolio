@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 4rem;
     /* équivalent à text-4xl */
