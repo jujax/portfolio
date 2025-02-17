@@ -1,37 +1,26 @@
-import JavascriptPlain from "devicons-react/lib/icons/JavascriptPlain";
-import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
-import PythonOriginalWordmark from "devicons-react/lib/icons/PythonOriginalWordmark";
-import PythonPlainWordmark from "devicons-react/lib/icons/PythonPlainWordmark";
-import CplusplusPlain from "devicons-react/lib/icons/CplusplusPlain";
-import NodejsOriginalWordmark from "devicons-react/lib/icons/NodejsOriginalWordmark";
-import NodejsPlainWordmark from "devicons-react/lib/icons/NodejsPlainWordmark";
-import ExpressOriginalWordmark from "devicons-react/lib/icons/ExpressOriginalWordmark";
-import ReactOriginalWordmark from "devicons-react/lib/icons/ReactOriginalWordmark";
-import NestjsOriginalWordmark from "devicons-react/lib/icons/NestjsOriginalWordmark";
+import AmazonwebservicesPlainWordmark from "devicons-react/lib/icons/AmazonwebservicesPlainWordmark";
 import AnsibleOriginalWordmark from "devicons-react/lib/icons/AnsibleOriginalWordmark";
 import AnsiblePlainWordmark from "devicons-react/lib/icons/AnsiblePlainWordmark";
-import TerraformOriginalWordmark from "devicons-react/lib/icons/TerraformOriginalWordmark";
-import TerraformPlainWordmark from "devicons-react/lib/icons/TerraformPlainWordmark";
-import DockerOriginalWordmark from "devicons-react/lib/icons/DockerOriginalWordmark";
+import CplusplusPlain from "devicons-react/lib/icons/CplusplusPlain";
 import DockerPlainWordmark from "devicons-react/lib/icons/DockerPlainWordmark";
-import KubernetesOriginalWordmark from "devicons-react/lib/icons/KubernetesOriginalWordmark";
-import KubernetesPlainWordmark from "devicons-react/lib/icons/KubernetesPlainWordmark";
-import GitlabOriginalWordmark from "devicons-react/lib/icons/GitlabOriginalWordmark";
-import GitlabPlainWordmark from "devicons-react/lib/icons/GitlabPlainWordmark";
+import ExpressOriginalWordmark from "devicons-react/lib/icons/ExpressOriginalWordmark";
 import GithubOriginalWordmark from "devicons-react/lib/icons/GithubOriginalWordmark";
-import LinuxOriginal from "devicons-react/lib/icons/LinuxOriginal";
-import LinuxPlain from "devicons-react/lib/icons/LinuxPlain";
-import AmazonwebservicesOriginalWordmark from "devicons-react/lib/icons/AmazonwebservicesOriginalWordmark";
-import AmazonwebservicesPlainWordmark from "devicons-react/lib/icons/AmazonwebservicesPlainWordmark";
+import GitlabPlainWordmark from "devicons-react/lib/icons/GitlabPlainWordmark";
 import GooglecloudOriginalWordmark from "devicons-react/lib/icons/GooglecloudOriginalWordmark";
-import PostgresqlOriginalWordmark from "devicons-react/lib/icons/PostgresqlOriginalWordmark";
-import PostgresqlPlainWordmark from "devicons-react/lib/icons/PostgresqlPlainWordmark";
-import RedisOriginalWordmark from "devicons-react/lib/icons/RedisOriginalWordmark";
-import RedisPlainWordmark from "devicons-react/lib/icons/RedisPlainWordmark";
-import SqliteOriginalWordmark from "devicons-react/lib/icons/SqliteOriginalWordmark";
-import SqlitePlainWordmark from "devicons-react/lib/icons/SqlitePlainWordmark";
-import MongodbOriginalWordmark from "devicons-react/lib/icons/MongodbOriginalWordmark";
+import JavascriptPlain from "devicons-react/lib/icons/JavascriptPlain";
+import KubernetesPlainWordmark from "devicons-react/lib/icons/KubernetesPlainWordmark";
+import LinuxPlain from "devicons-react/lib/icons/LinuxPlain";
 import MongodbPlainWordmark from "devicons-react/lib/icons/MongodbPlainWordmark";
+import NestjsOriginalWordmark from "devicons-react/lib/icons/NestjsOriginalWordmark";
+import NodejsOriginalWordmark from "devicons-react/lib/icons/NodejsOriginalWordmark";
+import NodejsPlainWordmark from "devicons-react/lib/icons/NodejsPlainWordmark";
+import PostgresqlPlainWordmark from "devicons-react/lib/icons/PostgresqlPlainWordmark";
+import PythonPlainWordmark from "devicons-react/lib/icons/PythonPlainWordmark";
+import ReactOriginalWordmark from "devicons-react/lib/icons/ReactOriginalWordmark";
+import RedisPlainWordmark from "devicons-react/lib/icons/RedisPlainWordmark";
+import SqlitePlainWordmark from "devicons-react/lib/icons/SqlitePlainWordmark";
+import TerraformPlainWordmark from "devicons-react/lib/icons/TerraformPlainWordmark";
+import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function Home() {
@@ -54,11 +43,7 @@ export default function Home() {
               <TypescriptPlain color="#007acc" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <PythonOriginalWordmark size="100%" />
-              ) : (
-                <PythonPlainWordmark color="#ffcf46" size="100%" />
-              )}
+              <PythonPlainWordmark color="#ffcf46" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <CplusplusPlain color="#659ad2" size="100%" />
@@ -105,32 +90,16 @@ export default function Home() {
               )}
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <TerraformOriginalWordmark size="100%" />
-              ) : (
-                <TerraformPlainWordmark color="#5c4ee5" size="100%" />
-              )}
+              <TerraformPlainWordmark color="#5c4ee5" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <DockerOriginalWordmark size="100%" />
-              ) : (
-                <DockerPlainWordmark color="#28b8eb" size="100%" />
-              )}
+              <DockerPlainWordmark color="#28b8eb" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <KubernetesOriginalWordmark size="100%" />
-              ) : (
-                <KubernetesPlainWordmark color="#326ce5" size="100%" />
-              )}
+              <KubernetesPlainWordmark color="#326ce5" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <GitlabOriginalWordmark size="100%" />
-              ) : (
-                <GitlabPlainWordmark color="#fc6d26" size="100%" />
-              )}
+              <GitlabPlainWordmark color="#fc6d26" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
@@ -140,11 +109,7 @@ export default function Home() {
               )}
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <LinuxOriginal size="100%" />
-              ) : (
-                <LinuxPlain color="white" size="100%" />
-              )}
+              <LinuxPlain color="black" size="100%" />
             </div>
           </div>
         </section>
@@ -153,11 +118,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-12 text-center">Cloud</h2>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <AmazonwebservicesOriginalWordmark size="100%" />
-              ) : (
-                <AmazonwebservicesPlainWordmark color="#FF9900" size="100%" />
-              )}
+              <AmazonwebservicesPlainWordmark color="#FF9900" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <GooglecloudOriginalWordmark size="100%" />
@@ -166,37 +127,19 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            Databases
-          </h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Databases</h2>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <PostgresqlOriginalWordmark size="100%" />
-              ) : (
-                <PostgresqlPlainWordmark color="#336791" size="100%" />
-              )}
+              <PostgresqlPlainWordmark color="#336791" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <RedisOriginalWordmark size="100%" />
-              ) : (
-                <RedisPlainWordmark color="#d82c20" size="100%" />
-              )}
+              <RedisPlainWordmark color="#d82c20" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <SqliteOriginalWordmark size="100%" />
-              ) : (
-                <SqlitePlainWordmark color="#69bae7" size="100%" />
-              )}
+              <SqlitePlainWordmark color="#69bae7" size="100%" />
             </div>
             <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <MongodbOriginalWordmark size="100%" />
-              ) : (
-                <MongodbPlainWordmark color="#57ae47" size="100%" />
-              )}
+              <MongodbPlainWordmark color="#57ae47" size="100%" />
             </div>
           </div>
         </section>
