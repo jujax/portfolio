@@ -26,13 +26,13 @@ import { useTheme } from "../contexts/ThemeContext";
 export default function Home() {
   const { theme } = useTheme();
   return (
-    <section>
+    <section >
       <section className="flex flex-col items-baseline justify-center min-h-screen p-4">
         <h1>Hello World, I'm Julien</h1>
         <p className="text-xl">I´m a Fullstack developer</p>
       </section>
 
-      <section className="container mx-auto px-4 space-y-24 mb-24">
+      <section className="container mx-auto px-4 space-y-24 pb-24">
         <section>
           <h2 className="text-3xl font-bold mb-12 text-center">Langages</h2>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
