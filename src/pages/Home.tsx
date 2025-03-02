@@ -33,8 +33,9 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto px-4 space-y-24 pb-24">
-        <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">Langages</h2>
+        <h2>Skills :</h2>
+        <section className="p-8">
+          <h3>Languages</h3>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <JavascriptPlain color="#f0db4f" size="100%" />
@@ -52,9 +53,9 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">
+          <h3>
             Frameworks & Libraries
-          </h2>
+          </h3>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
@@ -80,7 +81,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">DevOps</h2>
+          <h3>DevOps</h3>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               {theme === "light" ? (
@@ -119,7 +120,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">Cloud</h2>
+          <h3>Cloud</h3>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <AmazonwebservicesPlainWordmark color="#FF9900" size="100%" />
@@ -131,7 +132,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="text-3xl font-bold mb-12 text-center">Databases</h2>
+          <h3>Databases</h3>
           <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
             <div className="w-24 md:w-32 lg:w-40 m-10px">
               <PostgresqlPlainWordmark color="#336791" size="100%" />
