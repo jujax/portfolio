@@ -6,10 +6,12 @@ const menu = [
   {
     name: "Home",
     url: "/",
+    external: false,
   },
   {
     name: "Contact",
     url: "/contact",
+    external: false,
   },
   // {
   //   name: "CV",
