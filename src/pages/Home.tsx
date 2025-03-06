@@ -24,131 +24,129 @@ import TypescriptPlain from "devicons-react/lib/icons/TypescriptPlain";
 import { useTheme } from "../contexts/ThemeContext";
 
 export default function Home() {
-  const { theme } = useTheme();
-  return (
-    <section >
-      <section className="flex flex-col items-baseline justify-center min-h-screen p-4">
-        <h1>Hello World, I'm Julien</h1>
-        <p className="text-xl">I´m a Fullstack developer</p>
-      </section>
+	const { theme } = useTheme();
+	return (
+		<section>
+			<section className="flex flex-col items-baseline justify-center min-h-screen p-4">
+				<h1>Hello World, I'm Julien</h1>
+				<p className="text-xl">I´m a Fullstack developer</p>
+			</section>
 
-      <section className="container mx-auto px-4 space-y-24 pb-24">
-        <h2>Skills :</h2>
-        <section className="p-8">
-          <h3>Languages</h3>
-          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <JavascriptPlain color="#f0db4f" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <TypescriptPlain color="#007acc" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <PythonPlainWordmark color="#ffcf46" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <CplusplusPlain color="#659ad2" size="100%" />
-            </div>
-          </div>
-        </section>
+			<section className="container mx-auto px-4 space-y-24 pb-24">
+				<h2>Skills :</h2>
+				<section className="p-8">
+					<h3>Languages</h3>
+					<div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<JavascriptPlain color="#f0db4f" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<TypescriptPlain color="#007acc" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<PythonPlainWordmark color="#ffcf46" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<CplusplusPlain color="#659ad2" size="100%" />
+						</div>
+					</div>
+				</section>
 
-        <section>
-          <h3>
-            Frameworks & Libraries
-          </h3>
-          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <NodejsOriginalWordmark size="100%" />
-              ) : (
-                <NodejsPlainWordmark color="#68A063" size="100%" />
-              )}
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <ExpressOriginalWordmark size="100%" />
-              ) : (
-                <ExpressOriginalWordmark fill="white" size="100%" />
-              )}
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <ReactOriginalWordmark size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <NestjsOriginalWordmark size="100%" />
-            </div>
-          </div>
-        </section>
+				<section>
+					<h3>Frameworks & Libraries</h3>
+					<div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							{theme === "light" ? (
+								<NodejsOriginalWordmark size="100%" />
+							) : (
+								<NodejsPlainWordmark color="#68A063" size="100%" />
+							)}
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							{theme === "light" ? (
+								<ExpressOriginalWordmark size="100%" />
+							) : (
+								<ExpressOriginalWordmark fill="white" size="100%" />
+							)}
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<ReactOriginalWordmark size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<NestjsOriginalWordmark size="100%" />
+						</div>
+					</div>
+				</section>
 
-        <section>
-          <h3>DevOps</h3>
-          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <AnsibleOriginalWordmark size="100%" />
-              ) : (
-                <AnsiblePlainWordmark color="white" size="100%" />
-              )}
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <TerraformPlainWordmark color="#5c4ee5" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <DockerPlainWordmark color="#28b8eb" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <KubernetesPlainWordmark color="#326ce5" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <GitlabPlainWordmark color="#fc6d26" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              {theme === "light" ? (
-                <GithubOriginalWordmark size="100%" />
-              ) : (
-                <GithubOriginalWordmark filter="invert(1)" size="100%" />
-              )}
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-            {theme === "light" ? (
-              <LinuxPlain color="black" size="100%" />
-            ) : (
-              <LinuxPlain color="white" size="100%" />
-            )}
-            </div>
-          </div>
-        </section>
+				<section>
+					<h3>DevOps</h3>
+					<div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							{theme === "light" ? (
+								<AnsibleOriginalWordmark size="100%" />
+							) : (
+								<AnsiblePlainWordmark color="white" size="100%" />
+							)}
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<TerraformPlainWordmark color="#5c4ee5" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<DockerPlainWordmark color="#28b8eb" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<KubernetesPlainWordmark color="#326ce5" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<GitlabPlainWordmark color="#fc6d26" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							{theme === "light" ? (
+								<GithubOriginalWordmark size="100%" />
+							) : (
+								<GithubOriginalWordmark filter="invert(1)" size="100%" />
+							)}
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							{theme === "light" ? (
+								<LinuxPlain color="black" size="100%" />
+							) : (
+								<LinuxPlain color="white" size="100%" />
+							)}
+						</div>
+					</div>
+				</section>
 
-        <section>
-          <h3>Cloud</h3>
-          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <AmazonwebservicesPlainWordmark color="#FF9900" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <GooglecloudOriginalWordmark size="100%" />
-            </div>
-          </div>
-        </section>
+				<section>
+					<h3>Cloud</h3>
+					<div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<AmazonwebservicesPlainWordmark color="#FF9900" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<GooglecloudOriginalWordmark size="100%" />
+						</div>
+					</div>
+				</section>
 
-        <section>
-          <h3>Databases</h3>
-          <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <PostgresqlPlainWordmark color="#336791" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <RedisPlainWordmark color="#d82c20" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <SqlitePlainWordmark color="#69bae7" size="100%" />
-            </div>
-            <div className="w-24 md:w-32 lg:w-40 m-10px">
-              <MongodbPlainWordmark color="#57ae47" size="100%" />
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-  );
+				<section>
+					<h3>Databases</h3>
+					<div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<PostgresqlPlainWordmark color="#336791" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<RedisPlainWordmark color="#d82c20" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<SqlitePlainWordmark color="#69bae7" size="100%" />
+						</div>
+						<div className="w-24 md:w-32 lg:w-40 m-10px">
+							<MongodbPlainWordmark color="#57ae47" size="100%" />
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	);
 }

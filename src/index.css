@@ -2,47 +2,46 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-    background-color: rgb(229 229 229);
+	background-color: rgb(229 229 229);
 }
 
 body:where(.dark, .dark *) {
-    background-color: rgb(38 38 38);
+	background-color: rgb(38 38 38);
 }
 
 /* Masquer le curseur clignotant dans les champs de formulaire quand ils ne sont pas en focus */
 input:not(:focus),
 textarea:not(:focus) {
-    caret-color: transparent;
+	caret-color: transparent;
 }
 
 /* Restaurer le curseur uniquement quand l'élément est en focus */
 input:focus,
 textarea:focus {
-    caret-color: auto;
+	caret-color: auto;
 }
 
 h1 {
-    font-size: 4rem;
-    /* équivalent à text-4xl */
-    font-weight: 700;
-    /* équivalent à font-bold */
-    margin-bottom: 1.5rem;
-    /* équivalent à mb-6 */
-    text-align: left;
+	font-size: 4rem;
+	/* équivalent à text-4xl */
+	font-weight: 700;
+	/* équivalent à font-bold */
+	margin-bottom: 1.5rem;
+	/* équivalent à mb-6 */
+	text-align: left;
 }
 
-
 @media (max-width: 465px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+	h1 {
+		font-size: 2.5rem;
+	}
 }
 
 @font-face {
-    font-family: "Input";
-    src: url("./assets/Input-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Input";
+	src: url("./assets/Input-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 html,
@@ -56,8 +55,8 @@ button,
 a,
 ul,
 li {
-    font-family: "Input";
-    color: rgb(23 23 23);
+	font-family: "Input";
+	color: rgb(23 23 23);
 }
 
 .dark html,
@@ -71,27 +70,27 @@ li {
 .dark a,
 .dark ul,
 .dark li {
-    font-family: "Input";
-    color: rgb(245 245 245);
+	font-family: "Input";
+	color: rgb(245 245 245);
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+	font-size: 4rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	text-align: left;
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	text-align: left;
 }
 
 h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-align: left;
+	font-size: 1.75rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	text-align: left;
 }

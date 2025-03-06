@@ -1,31 +1,33 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Julien P, fullstack developer</title>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-YED73W18Q0"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-YED73W18Q0");
+		</script>
+	</head>
 
-  <title>Julien P, fullstack developer</title>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YED73W18Q0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-YED73W18Q0');
-  </script>
-
-</head>
-
-<body>
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text"  name="name">
-    <input type="email" name="email">
-    <textarea name="message"></textarea>
-   </form>	
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+	<body>
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input type="text" name="name" />
+			<input type="email" name="email" />
+			<textarea name="message"></textarea>
+		</form>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
 </html>
