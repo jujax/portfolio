@@ -24,7 +24,7 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="z-100 fixed top-4 left-1/2 -translate-x-1/2 w-full max-w-[400px] border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm">
+    <header className="z-100 fixed top-4 left-1/2 -translate-x-1/2 w-full max-w-[400px] border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xs">
       <nav className="px-6 h-16 flex items-center justify-between">
         <ul className="h-full flex items-center justify-center gap-6">
           {menu.map((item) => (
