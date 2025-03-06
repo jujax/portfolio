@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ContactForm() {
   return (
     <div className="overflow-x-auto w-full my-8 ">
@@ -16,10 +14,7 @@ export default function ContactForm() {
 
         <div className="space-y-6">
           <div>
-            <label
-              htmlFor="name"
-              className="block font-semibold mb-2"
-            >
+            <label htmlFor="name" className="block font-semibold mb-2">
               Name
             </label>
             <input
@@ -32,10 +27,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block font-semibold mb-2"
-            >
+            <label htmlFor="email" className="block font-semibold mb-2">
               Mail
             </label>
             <input
@@ -48,10 +40,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label
-              htmlFor="message"
-              className="block font-semibold mb-2"
-            >
+            <label htmlFor="message" className="block font-semibold mb-2">
               Message
             </label>
             <textarea
