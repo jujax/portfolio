@@ -9,7 +9,10 @@
 		"lint": "eslint . --fix",
 		"preview": "vite preview",
 		"prepare": "husky",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"precommit:format": "prettier $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g') --write --ignore-unknown",
+		"precommit:lint": "eslint --fix $(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')",
+		"precommit:build": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@icons-pack/react-simple-icons": "^10.2.0",
