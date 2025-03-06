@@ -34,9 +34,9 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="z-100 fixed top-4 left-1/2 -translate-x-1/2 w-full max-w-[800px] border border-neutral-200 dark:border-neutral-800 rounded-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xs">
+    <header className="z-100 fixed md:top-4 left-1/2 -translate-x-1/2 w-full max-w-[800px] border-b md:border border-neutral-200 dark:border-neutral-800 md:rounded-lg bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xs">
       <nav className="px-6 h-16 flex items-center justify-between">
-        <ul className="h-full flex items-center justify-center gap-6">
+        <ul className="h-full flex items-center justify-center gap-6 ml-auto mr-auto">
           {menu.map((item) => (
             <li key={item.name}>
               {item.external ? (
@@ -47,8 +47,8 @@ export default function Header() {
                   className="text-neutral-600 dark:text-neutral-200 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors text-sm font-medium flex items-center"
                 >
                   {item.logo && <item.logo size={20} className="mr-1" />}
-                  {item.name}
-                  <ExternalLink size={10} className="ml-1" />
+                  <p className="hidden md:block">{item.name}</p>
+                  <ExternalLink size={10} className="ml-1 hidden md:block" />
                 </a>
               ) : (
                 <Link
